@@ -3,7 +3,7 @@ from datetime import datetime
 
 def get_days_from_today(date_str: str)-> int:
     try:
-        date = datetime.strptime(date_str, "%Y-%m-%d").date() #str parse date
+        date = datetime.strptime(date_str, "%Y-%m-%d").date() 
         today = datetime.today().date()
         resalt= (today - date).days
         print(resalt)
